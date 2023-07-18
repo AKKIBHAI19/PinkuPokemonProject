@@ -2,9 +2,10 @@
 
 const container = document.querySelector('#container');
 const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
+const n = parseInt(prompt("how many pokemon u want to see"))
 
 
-for (let i = 1; i <= 151; i++) {
+for (let i = 1; i <= n; i++) {
     const pokemon = document.createElement('div');
     pokemon.classList.add('pokemon');
     const label = document.createElement('span');
